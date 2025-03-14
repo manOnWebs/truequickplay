@@ -1,0 +1,142 @@
+.main-content {
+    background: linear-gradient(to bottom, #f5d0a9, #ffb347, #ff7e45, #ff6b6b);
+}
+
+.social-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem;
+  color: #eee;
+}
+
+.social-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.social-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #a32818;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #814e00;
+}
+
+.founder-section, 
+.social-links-section, 
+.join-movement-section {
+  background-color: #333;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.founder-section h2, 
+.social-links-section h2, 
+.join-movement-section h2 {
+  color: #ff9800;
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid #555;
+  padding-bottom: 0.5rem;
+}
+
+.founder-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .founder-content {
+    flex-direction: row;
+  }
+}
+
+.founder-image {
+  flex: 1;
+  text-align: center;
+}
+
+.founder-image img {
+  max-width: 100%;
+  border-radius: 8px;
+  border: 3px solid #555;
+}
+
+.founder-image p {
+  margin-top: 0.5rem;
+  font-style: italic;
+  color: #bbb;
+}
+
+.founder-description {
+  flex: 2;
+}
+
+.founder-description p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.social-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+  width: 120px;
+}
+
+.social-link:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.social-link i {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.youtube {
+  background-color: #FF0000;
+}
+
+.twitter {
+  background-color: #1DA1F2;
+}
+
+.steam {
+  background-color: #171a21;
+}
+
+.discord {
+  background-color: #5865F2;
+}
+
+.join-movement-section p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.join-movement-section a {
+  color: #ff9800;
+  text-decoration: none;
+}
+
+.join-movement-section a:hover {
+  text-decoration: underline;
+}
