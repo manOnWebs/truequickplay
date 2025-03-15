@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/header';
 import Home from './components/Home';
 import Servers from './components/Servers';
@@ -8,11 +8,9 @@ import Footer from './components/Footer';
 import './App.css';
 
 function App() {
-  // Use basename for GitHub Pages - this needs to match the repository name in your homepage URL
-  const basename = process.env.NODE_ENV === 'production' ? '/truequickplay' : '';
-  
+  // Using HashRouter instead of BrowserRouter for GitHub Pages
   return (
-    <Router basename={basename}>
+    <Router>
       <div className="App">
         <Header />
         <main className="main-content">

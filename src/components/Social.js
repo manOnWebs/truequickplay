@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Social.css';
+// Import the image directly to let webpack handle it
+import hammMannImage from '../assets/hammmann.jpg';
 
 const Social = () => {
   return (
@@ -14,7 +16,7 @@ const Social = () => {
         <h2>About the Founder</h2>
         <div className="founder-content">
           <div className="founder-image">
-            <img src="/images/hammmann.jpg" alt="Hamm Mann" />
+            <img src={hammMannImage} alt="Hamm Mann" />
             <p>Hamm Mann - Founder of TrueQuickplay</p>
           </div>
           <div className="founder-description">
