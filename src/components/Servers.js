@@ -52,6 +52,16 @@ const Servers = () => {
       .catch(error => console.error("Failed to load banned words:", error));
   }, []);
   
+
+  const filterBadWords = (text) => {
+    let filteredText = text;
+    bannedWords.forEach((word) => {
+      const regex = new RegExp(`\\b${word}\\b`, "gi");
+      filteredText = filteredText.replace(regex, "*".repeat(word.length));
+    });
+    return filteredText;
+  };
+
   // Define applyFilters first to avoid the circular dependency
   const applyFilters = useCallback((serverList) => {
     const listToFilter = serverList || servers;
@@ -61,15 +71,6 @@ const Servers = () => {
     filtered = filtered.filter(server => 
       regionFilters[server.region] === true
     );
-
-    const filterBadWords = (text) => {
-      let filteredText = text;
-      bannedWords.forEach((word) => {
-        const regex = new RegExp(`\\b${word}\\b`, "gi");
-        filteredText = filteredText.replace(regex, "*".repeat(word.length));
-      });
-      return filteredText;
-    };
     
     // Apply gamemode filters
     filtered = filtered.filter(server => {
