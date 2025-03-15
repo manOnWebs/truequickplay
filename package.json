@@ -45,6 +45,6 @@
   },
   "devDependencies": {
     "concurrently": "^9.1.2",
-    "gh-pages": "4.0.0"
+    "gh-pages": "^4.0.0"
   }
 }

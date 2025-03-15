@@ -8,8 +8,8 @@ import Footer from './components/Footer';
 import './App.css';
 
 function App() {
-  // Use basename for GitHub Pages
-  const basename = process.env.NODE_ENV === 'production' ? '/TrueQuickplay' : '';
+  // Use basename for GitHub Pages - this needs to match the repository name in your homepage URL
+  const basename = process.env.NODE_ENV === 'production' ? '/truequickplay' : '';
   
   return (
     <Router basename={basename}>
