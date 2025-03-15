@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/truequickplay/static/css/main.db565bcc.css",
+    "main.js": "/truequickplay/static/js/main.c2790c3c.js",
+    "static/js/453.a75cfceb.chunk.js": "/truequickplay/static/js/453.a75cfceb.chunk.js",
+    "static/media/tf2-logo.png": "/truequickplay/static/media/tf2-logo.665a53e2586152141a9d.png",
+    "static/media/hammmann.jpg": "/truequickplay/static/media/hammmann.ff2700c9d4a66a5901e9.jpg",
+    "static/media/tf2build.ttf": "/truequickplay/static/media/tf2build.78d4f8cd122c4bf71771.ttf",
+    "static/media/tf2secondary.ttf": "/truequickplay/static/media/tf2secondary.e9e33e6003c3feb250d9.ttf",
+    "index.html": "/truequickplay/index.html",
+    "main.db565bcc.css.map": "/truequickplay/static/css/main.db565bcc.css.map",
+    "main.c2790c3c.js.map": "/truequickplay/static/js/main.c2790c3c.js.map",
+    "453.a75cfceb.chunk.js.map": "/truequickplay/static/js/453.a75cfceb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db565bcc.css",
+    "static/js/main.c2790c3c.js"
+  ]
+}
